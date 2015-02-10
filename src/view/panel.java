@@ -23,6 +23,7 @@ public class panel extends JPanel
 		baseLayout = new SpringLayout();
 		titleLabel = new JLabel("Welcome!");
 		
+		setupTable();
 		setupPanel();
 		setupLayout();
 		setupListeners();
@@ -46,7 +47,10 @@ public class panel extends JPanel
 	
 	private void setupLayout()
 	{
-		
+		baseLayout.putConstraint(SpringLayout.NORTH, table, 6, SpringLayout.SOUTH, titleLabel);
+		baseLayout.putConstraint(SpringLayout.WEST, table, 0, SpringLayout.WEST, titleLabel);
+		baseLayout.putConstraint(SpringLayout.SOUTH, table, 300, SpringLayout.NORTH, this);
+		baseLayout.putConstraint(SpringLayout.EAST, table, 0, SpringLayout.EAST, this);
 	}
 	
 	private void setupListeners()

@@ -16,7 +16,7 @@ public class frame extends JFrame
 	
 	private void setupFrame()
 	{
-		this.setSize(500, 500);
+		this.setSize(1000, 500);
 		this.setContentPane(appPanel);
 		this.setVisible(true);
 	}
