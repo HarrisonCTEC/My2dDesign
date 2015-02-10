@@ -22,7 +22,7 @@ public class Fruit
 	@Override
 	public String toString()
 	{
-		return "String!";
+		return this.name + ", Largest Producer:" + this.largestProducer + ", " + this.gramsOfSugar + "g (sugar).";
 	}
 
 }
