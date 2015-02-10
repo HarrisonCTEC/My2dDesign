@@ -36,7 +36,7 @@ public class controller
 	
 	public void start()
 	{
-		JOptionPane.showMessageDialog(appFrame, "Hello :)");
+		//JOptionPane.showMessageDialog(appFrame, "Hello :)");
 	}
 
 }
